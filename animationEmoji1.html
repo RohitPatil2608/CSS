@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 700px;
+            align-items: center;
+        }
+
+        #parent{
+            height: 700px;
+            width: 700px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-image: linear-gradient(to top, green, yellow, red);
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center; */
+            flex-wrap: wrap;
+        }
+
+        .eye{
+            height: 180px;
+            width: 180px;
+            border: 1px solid;
+            background-color: white;
+            border-radius: 50%;
+            align-content: center;   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tongue{
+            height: 180px;
+            width: 200px;
+            border: 1px solid;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background-image: linear-gradient(to bottom, rgb(246, 158, 158) 10%, red 90%);
+            margin-top: 100px;
+        }
+
+        #tongue:hover{
+            height: 220px;
+            background-color: rgb(253, 99, 99);
+        }
+
+        #first{
+            height: 150px;
+            width: 500px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 90px;  
+        }
+
+        .inner{
+            height: 60px;
+            width: 60px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: GFG 0.5s infinite linear;  
+
+        }
+
+        .cornea{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .cornea:hover{
+            background-color: red;
+            border: none;
+        }
+
+        .eye{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        .eye:hover{
+            height: 270px;
+            width: 270px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+        @keyframes GFG {
+            0% {
+                transform: rotate(0deg) 
+                      translateY(60px) rotate(0deg);
+            }
+  
+            100% {
+                transform: rotate(360deg) 
+                      translateY(60px) rotate(-360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="first">
+
+            <div class="eye" id="eye1">
+                <div class="inner" id="inner1">
+                    <div class="cornea" id="cornea1">
+                        eye
+                    </div>
+                </div>
+            </div>
+
+            <div class="eye" id="eye2">
+                <div class="inner" id="inner2">
+                    <div class="cornea" id="cornea2">
+                        eye
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="tongue"></div>
+    </div>
+</body>
+</html>

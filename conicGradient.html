@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cone{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            display: inline-block;
+        }
+        #cone1{
+            background-image: conic-gradient(yellow 0deg 90deg, blue 90deg 180deg, green 180deg 270deg, red 270deg 360deg);
+        }
+        #cone2{
+            background-image: conic-gradient(violet 0deg 45deg, indigo 45deg 90deg, blue 90deg 135deg, green 135deg 180deg, yellow 180deg 225deg, orange 225deg 270deg, red 270deg 315deg, aqua 315deg 360deg);
+        }
+        #cone3{
+            background-image: conic-gradient( red 0deg 45deg, blue 45deg 135deg, yellow 135deg 225deg, green 225deg 315deg, red 315deg 45deg)
+        }
+        #cone4{
+            background-image: conic-gradient(red 0deg 45deg, green 45deg 135deg, yellow 135deg, 315deg, red 315deg 360deg);
+        }
+        #cone5{
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+        }
+        #cone6{
+            background-image: conic-gradient(orange 0deg 90deg,green 90deg 180deg, aqua 180deg 360deg);
+        }
+        #cone7{
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg, green 30deg 40deg);
+        }
+        #cone8{
+            border-radius: 30%;
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg, green 30deg 40deg, hotpink 40deg 50deg, white 40deg 50deg);
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!-- .................................CONIC GRADIENT.................................. -->
+    <!-- SYNTAX--- background-image: conic-gradient(angle position, col1 angle, col2 angle, coln anglen) -->
+    <div class="cone" id="cone1"></div>
+    <div class="cone" id="cone2"></div>
+    <div class="cone" id="cone3"></div>
+    <div class="cone" id="cone4"></div>
+    <!-- ................................REPEATING CONIC GRADIENT...................................... -->
+    <div class="cone" id="cone5"></div>
+    <div class="cone" id="cone6"></div>
+    <div class="cone" id="cone7"></div>
+    <div class="cone" id="cone8"></div>
+</body>
+</html>

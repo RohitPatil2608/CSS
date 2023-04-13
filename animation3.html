@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 50%;
+            animation-name: color1;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            position: relative;
+        }
+        @keyframes color1 {
+            /* 14.28%{
+                background-color: red;
+                top:0px;
+            }
+            28.56%{
+                background-color: orange;
+                bottom: 200px;
+            }
+            42.84%{
+                background-color: yellow;
+                left: 200px;
+            }
+            57.12%{
+                background-color: green;
+                top: 200px;
+            }
+            71.40%{
+                background-color: blue;
+                transform: rotateX(45deg);
+            } 
+            85.68%{
+                background-color: indigo;
+                background-image: url(./mountains-gd3e003241_640.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 400px; 
+            }
+            100%{
+                background-color: violet;
+            } */
+            from{
+                transform:rotate(0deg);
+                background-image: url(./nature-g8f33a233f_640.jpg);
+                   background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+               }
+            to{
+                transform:rotate(360deg);
+                background-image: url(./nature-g8f33a233f_640.jpg);
+              background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

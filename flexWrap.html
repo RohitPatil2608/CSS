@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 400px;
+            width: 350px;
+            border: 1px solid; 
+            background-color: dodgerblue;  
+        }
+        .inner{
+            height: 100px;
+            width: 50px;
+            border: 1px solid;
+            background-color: red;
+        }
+        #box1{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        #box2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #box3{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            flex-direction: row-reverse;
+        }
+        #box4{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">
+        <div class="inner" id="inner1">BOX1</div>
+        <div class="inner" id="inner2">BOX2</div>
+        <div class="inner" id="inner3">BOX3</div>
+        <div class="inner" id="inner4">BOX4</div>
+        <div class="inner" id="inner5">BOX5</div>
+        <div class="inner" id="inner6">BOX6</div>
+        <div class="inner" id="inner7">BOX7</div>
+        <div class="inner" id="inner8">BOX8</div>
+    </div>
+    <div class="box" id="box2">
+        <div class="inner" id="inner1">BOX1</div>
+        <div class="inner" id="inner2">BOX2</div>
+        <div class="inner" id="inner3">BOX3</div>
+        <div class="inner" id="inner4">BOX4</div>
+        <div class="inner" id="inner5">BOX5</div>
+        <div class="inner" id="inner6">BOX6</div>
+        <div class="inner" id="inner7">BOX7</div>
+        <div class="inner" id="inner8">BOX8</div>
+    </div>
+    <div class="box" id="box3">
+        <div class="inner" id="inner1">BOX1</div>
+        <div class="inner" id="inner2">BOX2</div>
+        <div class="inner" id="inner3">BOX3</div>
+        <div class="inner" id="inner4">BOX4</div>
+        <div class="inner" id="inner5">BOX5</div>
+        <div class="inner" id="inner6">BOX6</div>
+        <div class="inner" id="inner7">BOX7</div>
+        <div class="inner" id="inner8">BOX8</div>
+    </div>
+    <div class="box" id="box4">
+        <div class="inner" id="inner1">BOX1</div>
+        <div class="inner" id="inner2">BOX2</div>
+        <div class="inner" id="inner3">BOX3</div>
+        <div class="inner" id="inner4">BOX4</div>
+        <div class="inner" id="inner5">BOX5</div>
+        <div class="inner" id="inner6">BOX6</div>
+        <div class="inner" id="inner7">BOX7</div>
+        <div class="inner" id="inner8">BOX8</div>
+    </div>
+</body>
+</html>
